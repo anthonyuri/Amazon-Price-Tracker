@@ -7,14 +7,13 @@ import lxml
 from email.message import EmailMessage
 import smtplib
 
-my_email = "anthonylovesuma@gmail.com"
-reciever = "anturiarte16@gmail.com"
-password = "qccbxhlioqisnzbu"
+my_email = os.environ.get('MY_EMAIL')
+reciever = os.environ.get('RECIEVER_EMAIL')
+password = os.environ.get('EMAIL_PASSWORD')
 
 USER_AGENT = "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:25.0) Gecko/20100101 Firefox/25.0"
 ACCEPT_LANGUAGE = "en-US"
 
-# URL = "https://www.amazon.com/Apple-MLWK3AM-A-AirPods-Pro/dp/B09JQMJHXY/ref=sr_1_1_sspa?crid=2YFM8H1V8BO07&keywords=airpods&qid=1656456826&sprefix=airpod%2Caps%2C124&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyMTZOTFBDSEFBTkomZW5jcnlwdGVkSWQ9QTAxMDk2MzBPRzIxRExXV0xTVlMmZW5jcnlwdGVkQWRJZD1BMDI2OTgyNjI5VzVZMDVGTFdBTDQmd2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl"
 URL = "https://www.amazon.com/dp/B08PZHYWJS/ref=fs_a_mdt2_us0"
 price_target = 500
 
